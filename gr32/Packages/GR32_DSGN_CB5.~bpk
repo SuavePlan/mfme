@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="GR32_DSGN_CB5.bpl"/>
+    <OBJFILES value="..\GR32_Reg.obj ..\GR32_Dsgn_Color.obj ..\GR32_Dsgn_Bitmap.obj 
+      GR32_DSGN_CB5.obj"/>
+    <RESFILES value="..\GR32_Reg.dcr"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) ..\GR32_Dsgn_Bitmap.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value="vcl50.lib dclstd50.lib GR32_CB5.lib"/>
+    <PACKAGES value="vcl50.bpi dclstd50.bpi GR32_CB5.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;.."/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="tlink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="GR32_DSGN_CB5.cpp"/>
+    <INCLUDEPATH value="..\;..;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="..\;..;$(BCB)\Projects\Lib;$(BCB)\Source\ToolsAPI;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\. -I.. -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG 
+      -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl50.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -v -JPHNE -M -LUdclstd50"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;Graphics32 Design Time Package&quot; -aa -Tpp -Gpd -x -Gn -Gl -Gi -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0pkg32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2057
+CodePage=1252
+
+[Excluded Packages]
+C:\FRUITTEST2\bcb\ECL\Lib\C++ Builder 5\ECLPackb5.bpl=EasyCompression Library
+
+[Debugging]
+DebugSourceDirs=
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="MFME.exe"/>
+    <OBJFILES value="MFME.obj interface.obj Alpha.obj Lamp.obj Ls138.obj Mc6809.obj 
+      Mc6809in.obj Mc6821.obj Mc6840.obj Meter.obj Reels.obj Triac.obj mpu4.obj 
+      property.obj dis6809.obj led.obj rs232.obj reeleditor.obj m6376.obj 
+      scn68681.obj credits.obj hopper.obj configuration.obj mpu3.obj Mc6800.obj 
+      various.obj system.obj 6800dasm.obj iomonitor.obj chredit.obj sample.obj 
+      samples.obj jpmhopper.obj JPMReels.obj mc68000\m68kops.obj 
+      mc68000\m68000.obj mc68000\d68k.obj mc68000\m68kcpu.obj 
+      mc68000\m68kopac.obj mc68000\m68kopdm.obj mc68000\m68kopnz.obj impact.obj 
+      scn68681b.obj Debug.obj snap.obj ym2413.obj Components\Alphadisplay.obj 
+      Components\Reelunit.obj band.obj m1a.obj I8279.obj ay8910.obj m1a6376.obj 
+      CanvasPanel.obj TMS\tms99xx.obj ppi8255.obj TMS\tms9902.obj sn76496.obj 
+      COMPONENTS\DiscReel.obj createband.obj COMPONENTS\FancyReel.obj 
+      Z80\z80.obj ace1.obj scorpion2.obj dotmatrix.obj 
+      Components\matrixdisplay.obj BFMAlpha.obj sys80.obj bfmhopper.obj 
+      Components\BandReel.obj shared.obj Z80\z80support.obj sys5.obj saa1099.obj 
+      Mc6850.obj mpu4video.obj Components\video.obj scn2674.obj mouse.obj 
+      mps2.obj scorpion1.obj scan.obj notes.obj prefs.obj managernotes.obj 
+      sec.obj secmeter.obj comps.obj bwbchr.obj proconn.obj space.obj 
+      COMPONENTS\acedisplay.obj COMPONENTS\procondisplay.obj 
+      COMPONENTS\newalpha.obj"/>
+    <RESFILES value="MFME.res bfmalpha.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) interface.dfm property.dfm reeleditor.dfm credits.dfm 
+      configuration.dfm iomonitor.dfm chredit.dfm samples.dfm Debug.dfm snap.dfm 
+      band.dfm createband.dfm scan.dfm notes.dfm prefs.dfm managernotes.dfm 
+      secmeter.dfm comps.dfm"/>
+    <LIBFILES value="&quot;bcb\ecl\Lib\C++ Builder 5\ECLPackb5.lib&quot; C:\mssdk\lib\Borland\dsound.lib 
+      C:\mssdk\lib\Borland\dxguid.lib C:\mssdk\lib\Borland\c_dinput.lib 
+      C:\mssdk\lib\Borland\dinput8.lib"/>
+    <LIBRARIES value="ECLPackb5.lib GR32_CB5.lib test.lib BCBSMP50.lib crc.lib vcldbx50.lib 
+      vclbde50.lib vcldb50.lib vclx50.lib vcl50.lib"/>
+    <SPARELIBS value="vcl50.lib vclx50.lib vcldb50.lib vclbde50.lib vcldbx50.lib crc.lib 
+      BCBSMP50.lib test.lib GR32_CB5.lib ECLPackb5.lib"/>
+    <PACKAGES value="vclx50.bpi vcl50.bpi vcldb50.bpi vclbde50.bpi vcldbx50.bpi bcbsmp50.bpi 
+      dclocx50.bpi qrpt50.bpi teeui50.bpi teedb50.bpi tee50.bpi ibsmp50.bpi 
+      nmfast50.bpi inetdb50.bpi inet50.bpi GR32_CB5.bpi"/>
+    <PATHCPP value=".;mc68000;Components;TMS;Z80"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="MFME.cpp"/>
+    <INCLUDEPATH value="gr32comp;H83002;Z80;TMS;Components;gr32;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;cjw;zieglersoft;crc\crc;&quot;ECL\Lib\C++ Builder 5&quot;"/>
+    <LIBPATH value="gr32comp;H83002;Z80;TMS;Components;gr32;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;cjw;zieglersoft;&quot;ECL\lib\C++ Builder 5&quot;;crc"/>
+    <WARNINGS value="-wuse -w-par -w-ngu -wdef"/>
+    <WARNOPTSTR value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-Igr32comp -IH83002 -IZ80 -ITMS -IComponents -Igr32 -Imc68000 -I$(BCB)\bin 
+      -I$(BCB)\projects -I$(BCB)\include -I$(BCB)\include\vcl -I$(BCB)\Lib\Obj 
+      -Icjw -Izieglersoft -Icrc\crc -I&quot;ECL\Lib\C++ Builder 5&quot; -src_suffix cpp 
+      -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl50.csm -Hc -Vx -Ve -X- -r- -a8 -5 -b- -k -y -v -vi- 
+      -c -tWM"/>
+    <CFLAG2 value=""/>
+    <CFLAG3 value=""/>
+    <PFLAGS value="-AWinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE 
+      -$Y+ -$W -$O- -v -JPHNV -M -JPHNE"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -v"/>
+    <IFLAGS value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=10
+MinorVer=2
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2057
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=MFME
+FileVersion=10.2.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+
+[Excluded Packages]
+C:\FRUITTEST2\bcb\ECL\Lib\C++ Builder 5\ECLPackb5.bpl=EasyCompression Library
+
+[HistoryLists\hlIncludePath]
+Count=30
+Item0=gr32comp;H83002;Z80;TMS;Components;gr32;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;cjw;zieglersoft;crc\crc;ECL\Lib\C++ Builder 5
+Item1=c:\graphics32-1_5;gr32comp;H83002;Z80;TMS;Components;gr32;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;cjw;zieglersoft;crc\crc;ECL\Lib\C++ Builder 5
+Item2=H83002;Z80;TMS;Components;gr32;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;cjw;zieglersoft;crc\crc;ECL\Lib\C++ Builder 5
+Item3=H83002;Z80;TMS;Components;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;cjw;zieglersoft;crc\crc;gr32;ECL\Lib\C++ Builder 5
+Item4=H83002;Z80;TMS;Components;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;cjw;zieglersoft;crc\crc;C:\Fruit\gr32;ECL\Lib\C++ Builder 5
+Item5=H83002;Z80;TMS;Components;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;cjw;zieglersoft;crc\crc;C:\Graphics32test\;ECL\Lib\C++ Builder 5
+Item6=Z80;TMS;Components;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;cjw;zieglersoft;crc\crc;C:\Graphics32test\;ECL\Lib\C++ Builder 5
+Item7=Z80;TMS;Components;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;cjw;zieglersoft;crc\crc;C:\Graphics32-1_5\;ECL\Lib\C++ Builder 5
+Item8=Z80;TMS;Components;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;cjw;zieglersoft;crc\crc;C:\Graphics32-1_5;ECL\Lib\C++ Builder 5
+Item9=Z80;TMS;Components;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;cjw;zieglersoft;DT32src;crc\crc;C:\Graphics32test\;ECL\Lib\C++ Builder 5
+Item10=Z80;TMS;Components;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;C:\fruitTEST2\bcb\cjw\;C:\fruitTEST2\bcb\zieglersoft\;C:\fruitTEST2\bcb\DT32src\;C:\fruitTEST2\crc\crc\;C:\Graphics32test\;c:\fruitTEST2\bcb\ECL\Lib\C++ Builder 5\
+Item11=Z80;TMS;Components;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;C:\fruitTEST2\bcb\cjw\;C:\fruitTEST2\bcb\zieglersoft\;C:\fruitTEST2\bcb\DT32src\;C:\fruitTEST2\crc\crc\;C:\Graphics32test\;c:\fruitTEST2\ECL\Lib\C++ Builder 5\
+Item12=Z80;TMS;Components;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;C:\fruitTEST2\bcb\cjw\;C:\fruitTEST2\bcb\zieglersoft\;C:\fruitTEST2\bcb\DT32src\;C:\fruitTEST2\crc\crc\;C:\Graphics32test\
+Item13=Components;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;C:\fruitTEST2\bcb\cjw\;C:\fruitTEST2\bcb\zieglersoft\;C:\fruitTEST2\bcb\DT32src\;C:\fruitTEST2\crc\crc\;C:\Graphics32test\
+Item14=Components;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;C:\fruitTEST2\bcb\cjw\;C:\fruitTEST2\bcb\zieglersoft\;C:\fruitTEST2\bcb\DT32src\;C:\fruitTEST2\crc\crc\;C:\Graphics32test
+Item15=C:\Graphics32test;Components;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;C:\fruitTEST2\bcb\cjw\;C:\fruitTEST2\bcb\zieglersoft\;C:\fruitTEST2\bcb\DT32src\;C:\fruitTEST2\crc\crc\
+Item16=mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;C:\fruitTEST2\bcb\cjw\;C:\fruitTEST2\bcb\zieglersoft\;C:\fruitTEST2\bcb\DT32src\;C:\fruitTEST2\crc\crc\
+Item17=C:\fruitTEST2\crc\crc\;mc68000;C:\program files\borland\cbuilder3\bin\;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;C:\fruitTEST2\bcb\cjw\;C:\fruitTEST2\bcb\zieglersoft\;C:\fruitTEST2\bcb\DT32src\
+Item18=..\fruitTEST2\crc\crc;mc68000;..\program files\borland\cbuilder3\bin;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;..\..\..\..\fruitTEST2\bcb\cjw;..\..\..\..\fruitTEST2\bcb\zieglersoft;..\..\..\..\fruitTEST2\bcb\DT32src
+Item19=..\fruitnew2\crc\crc;mc68000;..\program files\borland\cbuilder3\bin;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;..\..\..\..\fruitnew2\bcb\cjw;..\..\..\..\fruitnew2\bcb\zieglersoft;..\..\..\..\fruitnew2\bcb\DT32src
+Item20=mc68000;..\program files\borland\cbuilder3\bin;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;..\..\..\..\fruitnew2\bcb\cjw;..\..\..\..\fruitnew2\bcb\zieglersoft;..\..\..\..\fruitnew2\bcb\DT32src
+Item21=mc68000;..\program files\borland\cbuilder3\bin;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;$(BCB)\Source\ZieglerSoft;$(BCB)\Source\cjw;$(BCB)\Source\Dt32src;..\..\..\..\fruitnew2\bcb\cjw;..\..\..\..\fruitnew2\bcb\zieglersoft;..\..\..\..\fruitnew2\bcb\zieglersoft;..\..\..\..\fruitnew2\bcb\DT32src
+Item22=mc68000;..\program files\borland\cbuilder3\bin;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;$(BCB)\Source\ZieglerSoft;$(BCB)\Source\cjw;$(BCB)\Source\Dt32src;..\..\..\fruitnew2\bcb\cjw;..\..\..\fruitnew2bcb\zieglersoft
+Item23=mc68000;..\program files\borland\cbuilder3\bin;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;$(BCB)\Source\ZieglerSoft;$(BCB)\Source\cjw;$(BCB)\Source\Dt32src;..\..\fruitnew2\bcb\cjw;..\..\fruitnew2bcb\zieglersoft
+Item24=mc68000;..\program files\borland\cbuilder3\bin;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;$(BCB)\Source\ZieglerSoft;$(BCB)\Source\cjw;$(BCB)\Source\Dt32src;..\fruitnew2\bcb\cjw;..\fruitnew2bcb\zieglersoft
+Item25=mc68000;..\program files\borland\cbuilder3\bin;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;$(BCB)\Source\ZieglerSoft;$(BCB)\Source\cjw;$(BCB)\Source\Dt32src;bcb\cjw;bcb\zieglersoft
+Item26=mc68000;..\program files\borland\cbuilder3\bin;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;$(BCB)\Source\ZieglerSoft;$(BCB)\Source\cjw;$(BCB)\Source\Dt32src
+Item27=..\program files\borland\cbuilder3\bin;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;$(BCB)\Source\ZieglerSoft;$(BCB)\Source\cjw;$(BCB)\Source\Dt32src
+Item28=taudio;wavemix;..\program files\borland\cbuilder3\bin;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;$(BCB)\Source\ZieglerSoft;$(BCB)\Source\cjw;$(BCB)\Source\Dt32src
+Item29=wavemix;..\program files\borland\cbuilder3\bin;$(BCB)\bin;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib\Obj;$(BCB)\Source\ZieglerSoft;$(BCB)\Source\cjw;$(BCB)\Source\Dt32src
+
+[HistoryLists\hlLibraryPath]
+Count=30
+Item0=gr32comp;H83002;Z80;TMS;Components;gr32;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;cjw;zieglersoft;ECL\lib\C++ Builder 5;crc
+Item1=c:\graphics32-1_5;gr32comp;H83002;Z80;TMS;Components;gr32;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;cjw;zieglersoft;ECL\lib\C++ Builder 5;crc
+Item2=H83002;Z80;TMS;Components;gr32;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;cjw;zieglersoft;ECL\lib\C++ Builder 5;crc
+Item3=H83002;Z80;TMS;Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;cjw;zieglersoft;ECL\lib\C++ Builder 5;crc;gr32
+Item4=H83002;Z80;TMS;Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;cjw;zieglersoft;ECL\lib\C++ Builder 5;crc;C:\Fruit\gr32
+Item5=H83002;Z80;TMS;Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;cjw;zieglersoft;ECL\lib\C++ Builder 5;crc;C:\Graphics32test\
+Item6=H83002;Z80;TMS;Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;cjw;zieglersoft;ECL\lib\C++ Builder 5;crc;c:\mssdk\lib\;C:\Graphics32test\
+Item7=Z80;TMS;Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;cjw;zieglersoft;ECL\lib\C++ Builder 5;crc;c:\mssdk\lib\;C:\Graphics32test\
+Item8=Z80;TMS;Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;cjw;zieglersoft;ECL\lib\C++ Builder 5;crc;c:\mssdk\lib\;C:\Graphics-1_5\
+Item9=Z80;TMS;Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;cjw;zieglersoft;ECL\lib\C++ Builder 5;crc;c:\mssdk\lib\;C:\Graphics-1_5
+Item10=Z80;TMS;Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;cjw;zieglersoft;DT32src;ECL\lib\C++ Builder 5;crc;c:\mssdk\lib\;C:\Graphics32test\
+Item11=Z80;TMS;Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib\C++ Builder 5\;C:\FruitTEST2\bcb\crc\;c:\mssdk\lib\;C:\Graphics32test\
+Item12=Z80;TMS;Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib\C++ Builder 5\;C:\FruitTEST2\bcb\crc\;c:\mssdk\lib\;C:\Graphics32test\Packages\
+Item13=Z80;TMS;Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib\C++ Builder 5\;C:\FruitTEST2\bcb\crc\;c:\mssdk\lib\;C:\Graphics32test\Packages
+Item14=Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib\C++ Builder 5\;C:\FruitTEST2\bcb\crc\;c:\mssdk\lib\;C:\Graphics32test\
+Item15=Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib\C++ Builder 5\;C:\FruitTEST2\bcb\crc\;c:\mssdk\lib\;C:\Graphics32test
+Item16=C:\Graphics32test;Components;$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib\C++ Builder 5\;C:\FruitTEST2\bcb\crc\;c:\mssdk\lib\
+Item17=$(BCB)\Projects\Lib;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib\C++ Builder 5\;C:\FruitTEST2\bcb\crc\;c:\mssdk\lib\
+Item18=mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib\C++ Builder 5\;C:\FruitTEST2\bcb\crc\;c:\mssdk\lib\
+Item19=mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib\C++ Builder 5\;C:\FruitTEST2\bcb\crc\;C:\Fruitnew2\bcb\cjw\;c:\mssdk\lib\
+Item20=mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib\C++ Builder 5\;C:\FruitTEST2\bcb\crc;c:\mssdk\lib\
+Item21=mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib\C++ Builder 5\;c:\mssdk\lib\
+Item22=mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib\C++ Builder 5;c:\mssdk\lib\
+Item23=mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib\;c:\mssdk\lib\
+Item24=mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\bcb\ECL\lib;c:\mssdk\lib\
+Item25=mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\ECL\;c:\mssdk\lib\
+Item26=mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\FruitTEST2\bcb\cjw\;C:\FruitTEST2\bcb\zieglersoft\;C:\FruitTEST2\bcb\DT32src\;C:\FruitTEST2\ECL;c:\mssdk\lib\
+Item27=C:\fruitnew2\crc\crc\;C:\program files\borland\cbuilder3\bin\;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;C:\Fruitnew2\bcb\cjw\;C:\Fruitnew2\bcb\zieglersoft\;C:\Fruitnew2\bcb\DT32src\;c:\mssdk\lib\
+Item28=..\fruitnew2\crc\crc;..\program files\borland\cbuilder3\bin;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;..\..\..\..\Fruitnew2\bcb\cjw;..\..\..\..\Fruitnew2\bcb\zieglersoft;..\..\..\..\Fruitnew2\bcb\DT32src;c:\mssdk\lib
+Item29=..\fruitnew2\crc\crc;..\program files\borland\cbuilder3\bin;mc68000;$(BCB)\bin;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;..\..\..\..\Fruitnew2\bcb\cjw;..\..\..\..\Fruitnew2\bcb\zieglersoft;..\..\..\..\Fruitnew2\bcb\DT32src
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=C:\fruitpublic\Zieglersoft\
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE
+
+[HistoryLists\hlRunParameters]
+Count=3
+Item0=&quot;c:\fruitnew2\Release\Boulder Dash\boulder.gam&quot;
+Item1=c:\fruitnew2\Release\Boulder Dash\boulder.gam
+Item2=fred.gam
+
+[Debugging]
+DebugSourceDirs=C:\fruitpublic\Zieglersoft\
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
